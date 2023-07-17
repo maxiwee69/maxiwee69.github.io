@@ -1,0 +1,124 @@
+/* Body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #00FF7f, #00BFFF);
+}
+
+html {
+  height: 100%;
+}
+
+/* Navigation bar styles */
+.topnav {
+  overflow: hidden;
+  background-image: linear-gradient(to top, #1afb8b, #00BFFF);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav .logo {
+  float: left;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topnav .contact {
+  float: right;
+  display: block;
+}
+
+
+.topnav .contact a {
+  color: rgb(0, 0, 0);
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav .contact a:hover {
+  color: #004cff;
+}
+
+/* About section styles */
+.about {
+  margin-top: 80px;
+  padding: 50px;
+}
+
+.about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Add buttons styles */
+.add-button {
+  display: inline-block;
+  background-color: #000000;
+  padding: 20px;
+  width: auto;
+  height: 15px;
+  position:absolute; left:auto%; top: 50%; right: 50%; bottom: auto%;
+  color: #ffffff;
+  border: 4px double #cccccc; 
+  border-radius: 10px; 
+  font-size: 16px; 
+}
+
+.add-buttons {
+  display: inline-block;
+  background-color: #000000;
+  padding: 20px;
+  width: auto;
+  height: 15px;
+  color: #00b499;
+  position:absolute; left:50%; top: 50%; right: auto; bottom: auto;
+  border: 4px double #cccccc; 
+  border-radius: 10px; 
+  font-size: 16px; 
+}
+
+
+/* Footer Styles */
+.footer {
+  background-image: linear-gradient(to top, #00FF7F, #00bfff00);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  color: #000000;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #00FF7F, #00BFFF);
+}
+
+.footer a:hover {
+  color: #00BFFF;
+  text-decoration: underline;
+  background-image: linear-gradient(to bottom, #00FF7F, #00BFFF);
+}

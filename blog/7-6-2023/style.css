@@ -1,0 +1,76 @@
+body {
+	background-color: #333;
+    color: #fff;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+.blog-title {
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blog {
+    font-size: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 1rem;
+    padding-top: 1px;
+}
+
+.logo a {
+	color: #fff;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
+
+p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 110px);
+    padding: 2rem;
+}
+
+.menu {
+    float: right;
+    display: block;
+}
+.menu a {
+    color: rgb(0, 0, 0);
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu a:hover {
+    color: #004cff;
+}
