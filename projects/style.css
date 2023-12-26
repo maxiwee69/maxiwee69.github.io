@@ -1,0 +1,114 @@
+/* Body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #404040, #e7e7e7);
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  /* Navigation bar styles */
+  .topnav {
+    overflow: hidden;
+    background-color: #e2e2e2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .topnav .logo {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .topnav .contact {
+    float: right;
+    display: block;
+    background-color: #e2e2e2;
+  }
+  
+  
+  .topnav .contact a {
+    color: rgb(0, 1, 0);
+    float: right;
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .topnav .contact a:hover {
+    color: #004cff;
+    background-color: #e2e2e2;
+  }
+  
+  /* About section styles */
+  .about {
+    margin-top: 80px;
+    padding: 50px;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  /* Project section styles */
+    .dll-injector {
+        margin-top: 80px;
+        padding: 50px;
+    }
+
+    .dll-injector h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .dll-injection-checker {
+        margin-top: 80px;
+        padding: 50px;
+    }
+
+    .dll-injection-checker h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+  
+  /* Add buttons styles */
+  
+  
+  /* Footer Styles */
+  .footer {
+    background-color: linear-gradient(to top, #404040, #00000);
+    color: #cccccc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  

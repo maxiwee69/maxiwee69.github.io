@@ -125,3 +125,30 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+
+.add-button {
+	display: inline-block;
+	background-color: linear-gradient(to top, #404040, #e7e7e7);
+	padding: 20px;
+	width: auto;
+	height: 15px;
+	position:absolute; left:auto%; top: 70%; right: 50%; bottom: auto%;
+	border-radius: 5px;
+	color: #00b499;
+	color: #ffffff; 
+	font-size: 16px; 
+  }
+  
+  .add-buttons {
+	display: inline-block;
+	background-color: linear-gradient(to top, #404040, #e7e7e7);
+	padding: 20px;
+	width: auto;
+	height: 15px;
+	border-radius: 5px;
+	border-color: #b40000;
+	color: #00b499;
+	position:absolute; left:50%; top: 70%; right: auto; bottom: auto;
+	font-size: 16px; 
+  }
+  

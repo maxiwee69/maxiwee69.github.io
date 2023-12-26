@@ -2,7 +2,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(to bottom, #00FF7f, #00BFFF);
+  overflow: hidden;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #404040, #e7e7e7);
 }
 
 html {
@@ -12,7 +14,7 @@ html {
 /* Navigation bar styles */
 .topnav {
   overflow: hidden;
-  background-image: linear-gradient(to top, #1afb8b, #00BFFF);
+  background-color: #e2e2e2;
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,6 +24,7 @@ html {
   float: left;
   display: block;
   color: rgb(0, 0, 0);
+  background-color: #e2e2e2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -32,12 +35,14 @@ html {
 .topnav .contact {
   float: right;
   display: block;
+  background-color: #e2e2e2;
 }
 
 
 .topnav .contact a {
   color: rgb(0, 1, 0);
   float: right;
+  background-color: #e2e2e2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -46,6 +51,7 @@ html {
 
 .topnav .contact a:hover {
   color: #004cff;
+  background-color: #e2e2e2;
 }
 
 /* About section styles */
@@ -67,58 +73,16 @@ html {
 }
 
 /* Add buttons styles */
-.add-button {
-  display: inline-block;
-  background-color: #000000;
-  padding: 20px;
-  width: auto;
-  height: 15px;
-  position:absolute; left:auto%; top: 50%; right: 50%; bottom: auto%;
-  color: #ffffff;
-  border: 4px double #cccccc; 
-  border-radius: 10px; 
-  font-size: 16px; 
-}
-
-.add-buttons {
-  display: inline-block;
-  background-color: #000000;
-  padding: 20px;
-  width: auto;
-  height: 15px;
-  color: #00b499;
-  position:absolute; left:50%; top: 50%; right: auto; bottom: auto;
-  border: 4px double #cccccc; 
-  border-radius: 10px; 
-  font-size: 16px; 
-}
 
 
 /* Footer Styles */
 .footer {
-  background-image: linear-gradient(to top, #00FF7F, #00bfff00);
-  color: white;
+  background-color: linear-gradient(to top, #404040, #00000);
+  color: #cccccc;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-
-.footer p {
-  margin: 0;
-  color: #000000;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-  background-image: linear-gradient(to bottom, #00FF7F, #00BFFF);
-}
-
-.footer a:hover {
-  color: #00BFFF;
-  text-decoration: underline;
-  background-image: linear-gradient(to bottom, #00FF7F, #00BFFF);
 }
