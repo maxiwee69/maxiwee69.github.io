@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   </script>
+   <meta charset="UTF-8">
+    <title>Maxiwee</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+   <meta
+  name="description"
+  content="A simple Homepage">
+  <body>
+    <div class="topnav">
+      <div class="logo">
+        <h2>Maxiwee</h2>
+    </div>
+      <div class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="mailto:maxiwee@icloud.com">Email</a>
+        <a href="https://twitter.com/maxiweee69">Twitter</a>
+        <a href="https://paypal.me/maxiwee69">Donations</a>
+      </div>
+    </div>
+    <div class="Step2">
+      <h2>Theos on ARM64 </h2>
+        <class="createfirsttweak">
+            <h3>
+                Getting some needed stuff
+            </h3>
+            <p>
+                You need to get the aarch64 version of swift which you can get at <a href="https://www.swift.org/download/#releases">Swift.org</a>
+            </p>
+        </class>
+        <class="tweak-folder">
+            <h3>
+                Theos doesn't support aarch64
+            </h3>
+            <p>
+                So we need to manually patch it to do so.
+            </p>
+            <p>
+                First you need to download theos
+            </p>
+            <p>
+                Then you need to go to [swift folder you just downloaded]/usr/bin
+            </p>
+            <p>
+                And now run cp * /path/to/theos/toolchain/swift/iphone/bin
+            </p>
+            <p>
+                Now run cp  [swift folder you just downloaded]/usr/bin/ld64.lld /path/to/theos/toolchain/swift/iphone/bin/ld64
+            </p>
+            <p>
+                Note: this isn't anything official, I just found this out by myself and it works for me.
+            </p>
+            <p>
+                Maybe theos already supports aarch64 when you are reading this, then you don't need to do this.
+            </p>
+            <p>
+                Or maybe you know how to compile theos for aarch64 or there is a better way to do this, then please contact me.
+            </p>
+        </class> 
+    </div>
+    <a href="/learntotweak" class="bottom-buttons">Go back to the overview </a>
+    <div class="footer">
+      <p>&copy; 2023 Maxiwee. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

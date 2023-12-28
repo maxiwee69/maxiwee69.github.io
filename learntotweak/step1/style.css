@@ -1,89 +1,123 @@
 /* Body styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    flex-direction: column;
-    background-image: linear-gradient(to top, #404040, #e7e7e7);
-  }
-  
-  html {
-    height: 100%;
-  }
-  
-  /* Navigation bar styles */
-  .topnav {
-    overflow: hidden;
-    background-color: #e2e2e2;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .topnav .logo {
-    float: left;
-    display: block;
-    color: rgb(0, 0, 0);
-    background-color: #e2e2e2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .topnav .contact {
-    float: right;
-    display: block;
-    background-color: #e2e2e2;
-  }
-  
-  
-  .topnav .contact a {
-    color: rgb(0, 1, 0);
-    float: right;
-    background-color: #e2e2e2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .topnav .contact a:hover {
-    color: #004cff;
-    background-color: #e2e2e2;
-  }
-  
-  /* About section styles */
-  .about {
-    margin-top: 80px;
-    padding: 50px;
-  }
-  
-  .about h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  /* Add buttons styles */
-  
-  
-  /* Footer Styles */
-  .footer {
-    background-color: linear-gradient(to top, #404040, #00000);
-    color: #cccccc;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: #1a1a2e; /* Softer dark blue */
+  color: #e0e0e0; /* Lighter text color */
+  padding: 20px;
+}
+
+html {
+  height: 100%;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.logo {
+  margin-top: -20px;
+}
+
+.hamburger-menu div {
+  width: 2rem;
+  height: 0.25rem;
+  background: #e0e0e0; /* Lighter color for the hamburger menu */
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* Menu styles */
+.menu {
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  background: #0a0a15; /* Darker blue */
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu a {
+  display: block; /* Each link will take up its own line */
+  color: #e0e0e0; /* Lighter color for the links */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s linear;
+  margin-bottom: 1rem; /* Add some space between the links */
+}
+
+.menu a:hover {
+  color: #ddd; /* Change this to match your design */
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+/* About section styles */
+.about {
+  margin-top: 100px; /* Increase this value as needed */
+  padding: 50px;
+}
+
+.about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 60px; /* Add this */
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 2; /* Increase line-height */
+  margin-bottom: 20px;
+}
+
+/* Add buttons styles */
+.bottom-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #e67e22; /* Orange background for the buttons */
+  color: #ffffff; /* White color for visibility */
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0a0a15; /* Darker blue */
+  color: #e0e0e0; /* Lighter color for the footer text */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Add this */
+  right: 0; /* Add this */
+  margin: auto; /* Add this */
+  width: 100%;
+}

@@ -11,18 +11,25 @@
   content="A simple Homepage">
   <body>
     <div class="topnav">
-      <div class="logo">Maxiwee</div>
-      <div class="contact">
+      <div class="logo">
+        <h2>Maxiwee</h2>
+    </div>
+      <div class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <div class="menu">
+        <a href="/">Home</a>
         <a href="mailto:maxiwee@icloud.com">Email</a>
         <a href="https://twitter.com/maxiweee69">Twitter</a>
-        <a href="/mytweaks/">My iOS Tweaks</a>
-        <a href="/projects/">Some other random projects</a>
         <a href="https://paypal.me/maxiwee69">Donations</a>
       </div>
     </div>
     <div class="Step1">
-      <h2Step 1 - Setting up the Enviroment</h2>
-    <class="get-ide">
+      <h1>Step 1 - Setting up the Enviroment </h1> 
+    <div class="get-ide">
         <h2>
             Get your prefered IDE
         </h2>  
@@ -38,8 +45,8 @@
         <p>
             You can find it <a href="https://code.visualstudio.com/">here</a>.
         </p>
-    </class>
-    <class="get-theos">
+    </div>
+    <div class="get-theos">
         <h2>
             Get theos
         </h2>
@@ -49,63 +56,66 @@
         <p>
             It should work on all platforms the easiest will be macos and linux but windows also works.
         </p>
-        <class="macos-installation">
-            <class="homebrew-installation">
+        <div class="macos-installation">
+            <div class="homebrew-installation">
                 <h3>
                     Macos
                 </h3>
                 <p>
                     To install theos on macos you will need to have homebrew you can install it by running the following command in your terminal:
                 </p>
-            </class>
-            <class="homebrew-install-command">
+            </div>
+            <div class="homebrew-install-command">
                 <code>
                     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
                 </code>
-            </class>
-            <class="xcode-command-line-tools">
+            </div>
+            <div class="xcode-command-line-tools">
                 <h3>
                     Xcode Command Line Tools
                 </h3>
                 <p>
+                    The xcode command line tools are required to install theos on macOS.
+                </p>
+                <p>
                     To install the Xcode Command Line Tools you will need to run the following command in your terminal:
                 </p>
-            </class>
-            <class="xcode-command-line-tools-install-command">
+            </div>
+            <div class="xcode-command-line-tools-install-command">
                 <code>
                     xcode-select --install
                 </code>
-            </class>
-            <class="theos-installation">
+            </div>
+            <div class="theos-installation">
                 <p>
                     To install theos you will need to run the following command in your terminal:
                 </p>
-            </class>
-            <class="theos-install-command">
+            </div>
+            <div class="theos-install-command">
                 <code>
                     bash -c "$(curl -fsSL https://raw.githubusercontent.com/theos/theos/master/bin/install-theos)"
                 </code>
-            </class>
-        </class>
-        <class="linux-installation">
+            </div>
+        </div>
+        <div class="linux-installation">
             <h3>
                 Linux
             </h3>
             <p>
                 To install theos on linux you will need to install bash curl sudo which should already be installed if not you shoud be able to install them using your package manager.
             </p>
-        </class>
-        <class="theos-installation">
+        </div>
+        <div class="theos-installation">
             <p>
                 To install theos you will need to run the following command in your terminal:
             </p>
-        </class>
-        <class="theos-install-command">
+        </div>
+        <div class="theos-install-command">
             <code>
                 bash -c "$(curl -fsSL https://raw.githubusercontent.com/theos/theos/master/bin/install-theos)"
             </code>
-        </class>
-        <class="windows-installation">
+        </div>
+        <div class="windows-installation">
             <h3>
                 Windows
             </h3>
@@ -121,8 +131,8 @@
             <p>
                 After that just follow the linux installation guide.
             </p>
-        </class>
-        <class="tweak-command">
+        </div>
+        <div class="tweak-command">
             <h3>
                 Make some stuff easier
             </h3>
@@ -131,17 +141,23 @@
             <p>
                 To make some stuff easier you can run the following command in your terminal:
             </p>
-
-        </class>
-        <class="tweak-command">
+        </div>
+        <div class="tweak-command">
             <code>
                 echo "alias tweak='$TWEAK/bin/nic.pl'" >> ~/.bashrc
             </code>
-        </class>
-    </class>
+        </div>
     </div>
+    <p>
+        Now you should have theos installed and you can move on to the next step.
+    </p>
+    <p>
+    </p>
+    </div>
+    <a href="/learntotweak/step2" class="bottom-button">Go to Step 2</a>
     <div class="footer">
       <p>&copy; 2023 Maxiwee. All rights reserved.</p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    background-color: #000033; /* Dark blue */
+    overflow: hidden;
+    color: #fff; /* White text for contrast */
+    line-height: 1.5;
+}
+
+.topnav {
+    background-color: #000022; /* Even darker blue */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.topnav .logo {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #000022;
+    z-index: 100;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    padding-top: 2%; /* Increase padding at the top */
+    transition: transform 0.3s ease-out;
+    transform: translateX(100%);
+}
+
+.menu .contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    display: block; /* Make links take up the full width of the menu */
+}
+
+
+.about {
+    margin-top: 80px;
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #000022; /* Even darker blue */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Adjust padding and border radius to make design simpler */
+.step1 a, .step2 a, .step3 a, .aarch64 a {
+    display: inline-block;
+    color: #fff;
+    background-color: #333; /* Dark grey background */
+    padding: 15px 30px; /* Increase padding */
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between buttons */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.step1 a, .step2 a, .step3 a, .aarch64 a:hover {
+    background-color: #444; /* Slightly lighter grey when hovered */
+}
+/* Add transitions to all elements to make everything smoother */
+* {
+    transition: all 0.3s ease;
+}

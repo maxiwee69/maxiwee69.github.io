@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   </script>
+   <meta charset="UTF-8">
+    <title>Maxiwee</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+   <meta
+  name="description"
+  content="A simple Homepage">
+  <body>
+    <div class="topnav">
+        <div class="logo">
+            <h2>Maxiwee</h2>
+        </div>
+        <div class="hamburger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        
+        <div class="menu">
+          <a href="/">Home</a>
+          <a href="mailto:maxiwee@icloud.com">Email</a>
+          <a href="https://twitter.com/maxiweee69">Twitter</a>
+          <a href="https://paypal.me/maxiwee69">Donations</a>
+        </div>
+    </div>
+    <div class="Step3">
+      <h2>Step 3 - Compiling the tweak </h2>
+        <class="compiliing">
+            <class="opening-tweak-folder">
+                <h3>
+                    Opening the tweak folder
+                </h3>
+                <p>
+                    Now open the folder in your terminal or if you are using vscode you can open it using vscodes terminal.
+                </p>
+                <p>
+                    You can do this by typing <code>cd /path/to/folder</code> in your terminal.
+                </p>
+            </class>
+            <class="compile-command">
+            <h3>
+                The compile command
+            </h3>
+                <p>
+                    Now you can compile your tweak by typing <code>make package</code> in your terminal.
+                </p>
+                <p>
+                    If you want to compile it for rootless jailbreaks type <code>make package THEOS_PACKAGE_SCHEME=rootless</code> in your terminal.
+                </p>
+                <p>
+                    If everything went right you should now have a .deb file in your a folder called packages. If this isn't the case you probably did something wrong or this tutorial is outdated.
+                </p>
+            </class>
+            <class="installing-tweak">
+                <h3>
+                    Installing the tweak
+                </h3>
+                <p>
+                    Now just copy the .deb file to your phone and install it using your prefered package manager.(I use Sileo and you should too, Zebra is also a good option)
+                </p>
+                <p>
+                    If you want to install it using Sileo you can just share the file to Sileo and it will install it for you.(same for Zebra)
+                </p>
+                <p>
+                    To install it using Filza you just have to open the file in Filza and press install.
+                </p>
+                <p>
+                    To install over ssh or using a terminal app on the phone you can use the following command: <code>dpkg -i /path/to/file.deb</code>
+                </p>
+                <p>
+                    If your device doesn't respring automatically you need to do thaat manually using your prefered method
+                </p>
+                <p>
+                    After respringing you should see your tweak in action
+                </p>
+                <p>
+                    If you used the code i provided you with your docks background should be hidden 
+                </p>
+            </class>
+        </class> 
+    </div>
+    <a href="/learntotweak/step2" class="bottom-buttons">Go back to step 2 </a>
+    <div class="footer">
+      <p>&copy; 2023 Maxiwee. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

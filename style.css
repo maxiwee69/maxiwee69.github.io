@@ -14,7 +14,7 @@ html {
 /* Navigation bar styles */
 .topnav {
   overflow: hidden;
-  background-color: #e2e2e2;
+  background-color: ##CDCDCD;
   position: fixed;
   top: 0;
   width: 100%;
@@ -24,7 +24,7 @@ html {
   float: left;
   display: block;
   color: rgb(0, 0, 0);
-  background-color: #e2e2e2;
+  background-color: ##CDCDCD;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,6 +36,67 @@ html {
   float: right;
   display: block;
   background-color: #e2e2e2;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.logo {
+  margin-top: -20px;
+}
+
+.hamburger-menu div {
+  width: 2rem;
+  height: 0.25rem;
+  background: #e0e0e0; /* Lighter color for the hamburger menu */
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* Menu styles */
+.menu {
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  background: #0a0a15; /* Darker blue */
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu a {
+  display: block; /* Each link will take up its own line */
+  color: #e0e0e0; /* Lighter color for the links */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s linear;
+  margin-bottom: 1rem; /* Add some space between the links */
+}
+
+.menu a:hover {
+  color: #ddd; /* Change this to match your design */
+}
+
+.menu.active {
+  transform: translateX(0);
 }
 
 
@@ -85,4 +146,51 @@ html {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: #000022;
+  z-index: 100;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  padding-top: 2%; /* Increase padding at the top */
+  transition: transform 0.3s ease-out;
+  transform: translateX(100%);
+}
+
+.menu .contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  display: block; /* Make links take up the full width of the menu */
 }

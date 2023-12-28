@@ -1,34 +1,130 @@
-<class="createfirsttweak">
-    <p>
-        Now in your terminal run tweak or point directly to the nic.pl file, you should see a lot of options but we will only focus on 1 of these
-    </p>
-    <p>
-        You will see a lot of different options and choose the one that says "iphone/tweak" and press enter.(or if you want to use swift choose "iphone/tweak_swift")
-    </p>
-    <p>
-        Now you will be asked to enter a name for your tweak, enter whatever you want and press enter.
-    </p>
-    <p>
-        Now you will be asked to enter a package name for your tweak, enter something structured like com.yourname.tweakname and press enter.
-    </p>
-    <p>
-        Now you will be asked to enter a author name for your tweak, enter whatever you want and press enter.
-    </p>
-    <p>
-        Now you will be asked for some other stuff but you can just press enter for all of these.(at least if you want to strictly follow the tutorial)
-    </p>
-</class>
-<class="tweak-folder">
-    <p>
-        Now you should have a folder with the name you entered earlier in your current directory.
-    </p>
-    <p>
-        Now open the folder in your prefered IDE.
-    </p>
-    <p>
-        You should see a lot of files but we will only focus on 2 of these. One called tweak.x and one called Makefile.
-    </p>
-    <p>
-        Now open the tweak.x file and delete everything in it.
-    </p>
-</class>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   </script>
+   <meta charset="UTF-8">
+    <title>Maxiwee</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+   <meta
+  name="description"
+  content="A simple Homepage">
+  <body>
+    <div class="topnav">
+      <div class="logo">
+        <h2>Maxiwee</h2>
+    </div>
+      <div class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="mailto:maxiwee@icloud.com">Email</a>
+        <a href="https://twitter.com/maxiweee69">Twitter</a>
+        <a href="https://paypal.me/maxiwee69">Donations</a>
+      </div>
+    </div>
+    <div class="Step2">
+      <h2>Step 2 - Writing the code </h2>
+        <class="createfirsttweak">
+            <h3>
+                Create your first tweak
+            </h3>
+            <p>
+                Now in your terminal run tweak or point directly to the nic.pl file, you should see a lot of options but we will only focus on 1 of these
+            </p>
+            <p>
+                You will see a lot of different options and choose the one that says "iphone/tweak" and press enter.(or if you want to use swift choose "iphone/tweak_swift")
+            </p>
+            <p>
+                Now you will be asked to enter a name for your tweak, enter whatever you want and press enter.
+            </p>
+            <p>
+                Now you will be asked to enter a package name for your tweak, enter something structured like com.yourname.tweakname and press enter.
+            </p>
+            <p>
+                Now you will be asked to enter a author name for your tweak, enter whatever you want and press enter.
+            </p>
+            <p>
+                Now you will be asked for some other stuff but you can just press enter for all of these.(at least if you want to strictly follow the tutorial)
+            </p>
+        </class>
+        <class="tweak-folder">
+            <h3>
+                Start editing your tweak
+            </h3>
+            <p>
+                Now you should have a folder with the name you entered earlier in your current directory.
+            </p>
+            <p>
+                Now open the folder in your prefered IDE.
+            </p>
+            <p>
+                You should see a lot of files but we will only focus on 2 of these. One called tweak.x and one called Makefile.
+            </p>
+            <p>
+                Now open the tweak.x file and delete everything in it.
+            </p>
+            <p>
+                Now you can write your code in their or you can just paste for example This code in it:
+            </p>
+            <p>
+                <class="nodock-code">
+                    <code>
+                        #import &lt;UIKit/UIKit.h&gt; <br>
+                        @interface SBDockView : UIView {	<br>
+                            UIView* _backgroundView;    <br>
+                        }  <br>
+                        @property (nonatomic,retain) UIView * backgroundView; <br>
+                        @end <br>
+                        %hook SBDockView  <br>
+                        - (void) didMoveToWindow { <br>
+                            %orig; <br> 
+                            UIView *bgView = MSHookIvar&lt;UIView *&gt;(self, "_backgroundView"); <br>
+                            bgView.hidden = YES; <br>
+                        } <br>
+                        %end <br>
+                    </code>
+                </class>
+            </p>
+            <p>
+                Now open the Makefile and delete everything in it.
+            </p>
+            <p>
+                Now you can write your makefile stuff in their or you can just paste this 
+            </p>
+            <p>
+                <class="nodock-makefile">
+                    <code>
+                        TARGET := iphone:clang:latest:15.0 <br> 
+                        INSTALL_TARGET_PROCESSES = SpringBoard <br> 
+                        
+                        
+                        include $(THEOS)/makefiles/common.mk <br> 
+                        
+                        TWEAK_NAME = nodock <br> 
+                        
+                        
+                        nodock_FILES = Tweak.xm <br>
+                        nodock_CFLAGS = -fobjc-arc <br>
+                        
+                        include $(THEOS_MAKE_PATH)/tweak.mk <br>
+                        
+                        after-install:: <br>
+                            install.exec "sbreload"  <br>
+                    </code>
+                </class>
+            </p>
+        </class> 
+    </div>
+    <a href="/learntotweak/step1" class="bottom-buttons">Go back to step 1 </a>
+    <a href="/learntotweak/step3" class="bottom-button">Go to Step 3</a>
+    <div class="footer">
+      <p>&copy; 2023 Maxiwee. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
