@@ -165,7 +165,7 @@ html {
 .hamburger-menu div {
   width: 2rem;
   height: 0.25rem;
-  background-color: #fff;
+  background-color: #414141;
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
