@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     background-color: #000033; /* Dark blue */
-    overflow: hidden;
+    overflow-x: hidden;
     color: #fff; /* White text for contrast */
     line-height: 1.5;
 }

@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    ;
     flex-direction: column;
     background-image: linear-gradient(to top, #404040, #e7e7e7);
   }
@@ -13,7 +13,7 @@ body {
   
   /* Navigation bar styles */
   .topnav {
-    overflow: hidden;
+    ;
     background-color: #e2e2e2;
     position: fixed;
     top: 0;

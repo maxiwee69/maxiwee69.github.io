@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   flex-direction: column;
   background-color: #1a1a2e; /* Softer dark blue */
   color: #e0e0e0; /* Lighter text color */
