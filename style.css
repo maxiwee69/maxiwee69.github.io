@@ -13,8 +13,7 @@ html {
 
 /* Navigation bar styles */
 .topnav {
-  ;
-  background-color: ##CDCDCD;
+  background-color: #CDCDCD;
   position: fixed;
   top: 0;
   width: 100%;
@@ -24,7 +23,7 @@ html {
   float: left;
   display: block;
   color: rgb(0, 0, 0);
-  background-color: ##CDCDCD;
+  background-color: #CDCDCD;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -99,7 +98,6 @@ html {
   transform: translateX(0);
 }
 
-
 .topnav .contact a {
   color: rgb(0, 1, 0);
   float: right;
@@ -137,8 +135,6 @@ html {
 
 
 /* Footer Styles */
-
-
 
 .hamburger-menu {
   display: flex;

@@ -1,143 +1,147 @@
 header {
-	background-color: #170051;
-	color: #fff;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0 20px;
+    background-color: #170051;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
 body {
-	margin: 0;
-	font-family: Arial, sans-serif;
-	background-image: linear-gradient(to bottom, #180056, #000000);
-	color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #180056, #000000);
+    color: #fff;
 }
 
 header nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	flex-grow: 1;
-	align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
 }
 
 header nav li {
-	margin: 0 10px;
+    margin: 0 10px;
 }
 
 main {
-	padding-top: 60px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	min-height: calc(100vh - 110px);
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 110px);
 }
 
 main h1 {
-	font-size: 40px;
-	margin: 0;
-	color: #fff;
-	text-align: center;
+    font-size: 40px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
 }
 
 .link-container {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .link-container > div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
-	margin-right: 10px;
-	border-radius: 5px;
-	font-size: 16px;
-	cursor: pointer;
-	border-style: solid;
-	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-style: solid;
+    position: relative;
 }
 
 .link-container > div:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 .lol {
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	color: #000;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	background-color: transparent;
-	border: none;
-	padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 .lol1 {
-	position: absolute;
-	top: 50%;
-	right: 7%;
-	transform: translateY(-50%);
-	color: #000;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	background-color: transparent;
-	border: none;
-	padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translateY(-50%);
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 .clickable-text {
-	color: #fff;
-	text-decoration: none;
-	font-size: 16px;
-	background-color: transparent;
-	border: none;
-	padding: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 .clickable-text:hover {
-	color: #ccc;
+    color: #ccc;
 }
 
-
-
 .add-button {
-	display: inline-block;
-	background-color: linear-gradient(to top, #404040, #e7e7e7);
-	padding: 20px;
-	width: auto;
-	height: 15px;
-	position:absolute; left:auto%; top: 70%; right: 50%; bottom: auto%;
-	border-radius: 5px;
-	color: #00b499;
-	color: #ffffff; 
-	font-size: 16px; 
-  }
-  
-  .add-buttons {
-	display: inline-block;
-	background-color: linear-gradient(to top, #404040, #e7e7e7);
-	padding: 20px;
-	width: auto;
-	height: 15px;
-	border-radius: 5px;
-	border-color: #b40000;
-	color: #00b499;
-	position:absolute; left:50%; top: 70%; right: auto; bottom: auto;
-	font-size: 16px; 
-  }
-  
+    display: inline-block;
+    background: linear-gradient(to top, #404040, #e7e7e7);
+    padding: 20px;
+    width: auto;
+    height: 15px;
+    position: absolute; 
+    left: auto; 
+    top: 70%; 
+    right: 50%; 
+    bottom: auto;
+    border-radius: 5px;
+    color: #ffffff; 
+    font-size: 16px; 
+}
+
+.add-buttons {
+    display: inline-block;
+    background: linear-gradient(to top, #404040, #e7e7e7);
+    padding: 20px;
+    width: auto;
+    height: 15px;
+    border-radius: 5px;
+    border-color: #b40000;
+    color: #00b499;
+    position: absolute; 
+    left: 50%; 
+    top: 70%; 
+    right: auto; 
+    bottom: auto;
+    font-size: 16px; 
+}
