@@ -7,6 +7,9 @@ body {
   background-color: #1a1a2e; /* Softer dark blue */
   color: #e0e0e0; /* Lighter text color */
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 html {
@@ -114,10 +117,6 @@ html {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0; /* Add this */
-  right: 0; /* Add this */
-  margin: auto; /* Add this */
   width: 100%;
+  flex-shrink: 0;
 }

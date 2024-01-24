@@ -128,10 +128,6 @@ html {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0; /* Add this */
-  right: 0; /* Add this */
-  margin: auto; /* Add this */
   width: 100%;
+  flex-shrink: 0;
 }
