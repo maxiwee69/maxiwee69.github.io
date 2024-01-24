@@ -13,7 +13,7 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
                 # Read the existing content
                 content = file.read()
                 # Remove the footer
-                content = re.sub(r'<div class="footer">.*?</div>', '', content, flags=re.DOTALL)
+                content = re.sub(r'<footer>.*?</footer>', '', content, flags=re.DOTALL)
                 # Write the new content back to the file
                 file.seek(0)
                 file.write(content)
@@ -23,10 +23,10 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
             with open(filepath, 'r+') as file:
                 # Read the existing content
                 content = file.read()
-                # Remove the .footer CSS rules
-                content = re.sub(r'\.footer\s*{[^}]*}', '', content)
+                # Remove the footer CSS rules
+                content = re.sub(r'footer\s*{[^}]*}', '', content)
                 # Write the new content back to the file
                 file.seek(0)
                 file.write(content)
                 file.truncate()
-                print(f'Removed .footer CSS from: {filepath}')
+                print(f'Removed footer CSS from: {filepath}')

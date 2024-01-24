@@ -113,18 +113,7 @@ main h1 {
 	color: #ccc;
 }
 
-footer {
-	background-color: #000000;
-	color: #fff;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 
 .add-button {
 	display: inline-block;

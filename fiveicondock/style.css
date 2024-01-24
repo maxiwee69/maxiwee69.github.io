@@ -58,13 +58,5 @@ img {
     max-height: 550px; /* Add this line to limit the image height */
 }
   
-footer {
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #000000;
-    color: #fff;
-}
+
   
