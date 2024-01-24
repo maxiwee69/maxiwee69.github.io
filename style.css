@@ -137,16 +137,7 @@ html {
 
 
 /* Footer Styles */
-.footer {
-  background-color: linear-gradient(to top, #404040, #00000);
-  color: #cccccc;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+
 
 
 .hamburger-menu {

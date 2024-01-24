@@ -92,16 +92,7 @@ body {
     margin-bottom: 20px;
 }
 
-.footer {
-    background-color: #000022; /* Even darker blue */
-    color: #fff; /* White text for contrast */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
+
 
 /* Adjust padding and border radius to make design simpler */
 .step1 a, .step2 a, .step3 a, .aarch64 a {
