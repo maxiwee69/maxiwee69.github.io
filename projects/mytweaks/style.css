@@ -15,7 +15,7 @@ header {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #180056, #000000);
+    background-image: linear-gradient(to bottom, #180056, #000000);  
     color: #fff;
 }
 
@@ -72,33 +72,6 @@ main h1 {
     margin-right: 0;
 }
 
-.lol {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-}
-
-.lol1 {
-    position: absolute;
-    top: 50%;
-    right: 7%;
-    transform: translateY(-50%);
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-}
 
 .clickable-text {
     color: #fff;
@@ -115,7 +88,7 @@ main h1 {
 
 .add-button {
     display: inline-block;
-    background: linear-gradient(to top, #404040, #e7e7e7);
+    background-color: #180056;
     padding: 20px;
     width: auto;
     height: 15px;
@@ -131,7 +104,7 @@ main h1 {
 
 .add-buttons {
     display: inline-block;
-    background: linear-gradient(to top, #404040, #e7e7e7);
+    background-color: #180056;
     padding: 20px;
     width: auto;
     height: 15px;

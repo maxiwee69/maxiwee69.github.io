@@ -13,7 +13,7 @@ html {
 
 /* Navigation bar styles */
 .topnav {
-  background-color: #CDCDCD;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,7 +23,6 @@ html {
   float: left;
   display: block;
   color: rgb(0, 0, 0);
-  background-color: #CDCDCD;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -34,12 +33,25 @@ html {
 .topnav .contact {
   float: right;
   display: block;
-  background-color: #e2e2e2;
 }
 
+.topnav .contact a {
+  color: rgb(0, 1, 0);
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav .contact a:hover {
+  color: #bfbfbf;
+}
+
+/* Hamburger menu styles */
 .hamburger-menu {
   position: fixed;
-  top: 20px;
+  top: 15px;
   right: 20px;
   display: flex;
   flex-direction: column;
@@ -50,17 +62,13 @@ html {
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
-}
-
-.logo {
-  margin-top: -20px;
+  z-index: 20;
 }
 
 .hamburger-menu div {
   width: 2rem;
   height: 0.25rem;
-  background: #e0e0e0; /* Lighter color for the hamburger menu */
+  background-color: #414141;
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
@@ -69,48 +77,43 @@ html {
 
 /* Menu styles */
 .menu {
-  transform: translateX(100%);
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 200px;
-  background: #0a0a15; /* Darker blue */
-  padding: 1rem;
-  box-sizing: border-box;
-  transition: transform 0.3s ease-in-out;
+  width: 300px;
+  background-color: #8d8d8d;
+  z-index: 100;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2%;
+  transition: transform 0.3s ease-out;
+  transform: translateX(100%);
 }
 
 .menu a {
-  display: block; /* Each link will take up its own line */
-  color: #e0e0e0; /* Lighter color for the links */
+  display: block;
+  color: #e0e0e0;
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s linear;
-  margin-bottom: 1rem; /* Add some space between the links */
+  margin-bottom: 1rem;
 }
 
 .menu a:hover {
-  color: #ddd; /* Change this to match your design */
+  color: #ddd;
 }
 
 .menu.active {
   transform: translateX(0);
 }
 
-.topnav .contact a {
-  color: rgb(0, 1, 0);
-  float: right;
-  background-color: #e2e2e2;
-  text-align: center;
-  padding: 14px 16px;
+.menu .contact a {
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
-}
-
-.topnav .contact a:hover {
-  color: #bfbfbf;
-  background-color: #e2e2e2;
+  padding: 10px;
+  display: block;
 }
 
 /* About section styles */
@@ -129,55 +132,4 @@ html {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
-}
-
-/* Add buttons styles */
-
-
-/* Footer Styles */
-
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 20;
-  cursor: pointer;
-}
-
-.hamburger-menu div {
-  width: 2rem;
-  height: 0.25rem;
-  background-color: #414141;
-  border-radius: 10px;
-  transition: all 0.3s linear;
-  position: relative;
-  transform-origin: 1px;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 300px;
-  background-color: #8d8d8d;
-  z-index: 100;
-  align-items: center;
-  justify-content: flex-start; /* Align items to the start */
-  padding-top: 2%; /* Increase padding at the top */
-  transition: transform 0.3s ease-out;
-  transform: translateX(100%);
-}
-
-.menu .contact a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 10px;
-  display: block; /* Make links take up the full width of the menu */
 }
