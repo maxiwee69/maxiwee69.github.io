@@ -1,11 +1,11 @@
-/* Body styles */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
   flex-direction: column;
-  background-color: #1a1a2e; /* Softer dark blue */
-  color: #e0e0e0; /* Lighter text color */
+  background-color: #1a1a2e; 
+  color: #e0e0e0; 
   padding: 20px;
 }
 
@@ -13,7 +13,7 @@ html {
   height: 100%;
 }
 
-/* Hamburger menu styles */
+
 .hamburger-menu {
   position: fixed;
   top: 20px;
@@ -37,14 +37,14 @@ html {
 .hamburger-menu div {
   width: 2rem;
   height: 0.25rem;
-  background: #e0e0e0; /* Lighter color for the hamburger menu */
+  background: #e0e0e0; 
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
   transform-origin: 1px;
 }
 
-/* Menu styles */
+
 .menu {
   transform: translateX(100%);
   position: fixed;
@@ -52,32 +52,32 @@ html {
   right: 0;
   height: 100vh;
   width: 200px;
-  background: #0a0a15; /* Darker blue */
+  background: #0a0a15; 
   padding: 1rem;
   box-sizing: border-box;
   transition: transform 0.3s ease-in-out;
 }
 
 .menu a {
-  display: block; /* Each link will take up its own line */
-  color: #e0e0e0; /* Lighter color for the links */
+  display: block; 
+  color: #e0e0e0; 
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s linear;
-  margin-bottom: 1rem; /* Add some space between the links */
+  margin-bottom: 1rem; 
 }
 
 .menu a:hover {
-  color: #ddd; /* Change this to match your design */
+  color: #ddd; 
 }
 
 .menu.active {
   transform: translateX(0);
 }
 
-/* About section styles */
+
 .about {
-  margin-top: 100px; /* Increase this value as needed */
+  margin-top: 100px; 
   padding: 50px;
 }
 
@@ -85,24 +85,24 @@ html {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
-  padding-top: 60px; /* Add this */
+  padding-top: 60px; 
 }
 
 .about p {
   font-size: 18px;
-  line-height: 2; /* Increase line-height */
+  line-height: 2; 
   margin-bottom: 20px;
 }
 
-/* Add buttons styles */
+
 .bottom-button {
   position: fixed;
   float: right;
   bottom: 20px;
   right: 20px;
   padding: 10px 20px;
-  background: #e67e22; /* Orange background for the buttons */
-  color: #ffffff; /* White color for visibility */
+  background: #e67e22; 
+  color: #ffffff; 
   text-decoration: none;
   border-radius: 5px;
   z-index: 1000;
@@ -112,13 +112,13 @@ html {
   float: left;
   position: fixed;
   bottom: 20px;
-  left: 20px; /* Changed from right to left */
+  left: 20px; 
   padding: 10px 20px;
-  background: #e67e22; /* Orange background for the buttons */
-  color: #ffffff; /* White color for visibility */
+  background: #e67e22; 
+  color: #ffffff; 
   text-decoration: none;
   border-radius: 5px;
   z-index: 1000;
 }
 
-/* Footer Styles */
+

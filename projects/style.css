@@ -1,11 +1,11 @@
-/* Body styles */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
   flex-direction: column;
-  background-color: #1a1a2e; /* Softer dark blue */
-  color: #e0e0e0; /* Lighter text color */
+  background-color: #1a1a2e; 
+  color: #e0e0e0; 
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@ html {
   height: 100%;
 }
 
-/* Hamburger menu styles */
+
 .hamburger-menu {
   position: fixed;
   top: 20px;
@@ -40,14 +40,14 @@ html {
 .hamburger-menu div {
   width: 2rem;
   height: 0.25rem;
-  background: #e0e0e0; /* Lighter color for the hamburger menu */
+  background: #e0e0e0; 
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
   transform-origin: 1px;
 }
 
-/* Menu styles */
+
 .menu {
   transform: translateX(100%);
   position: fixed;
@@ -55,30 +55,30 @@ html {
   right: 0;
   height: 100vh;
   width: 200px;
-  background: #0a0a15; /* Darker blue */
+  background: #0a0a15; 
   padding: 1rem;
   box-sizing: border-box;
   transition: transform 0.3s ease-in-out;
 }
 
 .menu a {
-  display: block; /* Each link will take up its own line */
-  color: #e0e0e0; /* Lighter color for the links */
+  display: block; 
+  color: #e0e0e0; 
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s linear;
-  margin-bottom: 1rem; /* Add some space between the links */
+  margin-bottom: 1rem; 
 }
 
 .menu a:hover {
-  color: #ddd; /* Change this to match your design */
+  color: #ddd; 
 }
 
 .menu.active {
   transform: translateX(0);
 }
 
-/* About section styles */
+
 .about {
   padding-left: 50px;
 }
@@ -87,16 +87,16 @@ html {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
-  padding-top: 60px; /* Add this */
+  padding-top: 60px; 
 }
 
 .about p {
   font-size: 18px;
-  line-height: 2; /* Increase line-height */
+  line-height: 2; 
   margin-bottom: 20px;
 }
 
-/* Project section styles */
+
 .dll-injector {
   margin-top: 80px;
   padding: 50px;
@@ -131,7 +131,7 @@ html {
 }
 
 .cs2-esp p {
-  font-size: 18px; /* Same as .about p */
+  font-size: 18px; 
   line-height: 1.5;
   margin-bottom: 20px;
 }

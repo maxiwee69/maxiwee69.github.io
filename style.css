@@ -1,4 +1,4 @@
-/* Body styles */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@ html {
   height: 100%;
 }
 
-/* Navigation bar styles */
+
 .topnav {
   overflow: hidden;
   position: fixed;
@@ -48,7 +48,7 @@ html {
   color: #bfbfbf;
 }
 
-/* Hamburger menu styles */
+
 .hamburger-menu {
   position: fixed;
   top: 15px;
@@ -75,7 +75,7 @@ html {
   transform-origin: 1px;
 }
 
-/* Menu styles */
+
 .menu {
   position: fixed;
   top: 0;
@@ -116,7 +116,7 @@ html {
   display: block;
 }
 
-/* About section styles */
+
 .about {
   margin-top: 80px;
   padding: 50px;

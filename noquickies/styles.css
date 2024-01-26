@@ -55,7 +55,7 @@ img {
     max-width: 100%;
     height: auto;
     margin-right: 20px;
-    max-height: 550px; /* Add this line to limit the image height */
+    max-height: 550px; 
 }
   
 

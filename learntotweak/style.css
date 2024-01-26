@@ -4,14 +4,14 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
-    background-color: #000033; /* Dark blue */
+    background-color: #000033; 
     overflow-x: hidden;
-    color: #fff; /* White text for contrast */
+    color: #fff; 
     line-height: 1.5;
 }
 
 .topnav {
-    background-color: #000022; /* Even darker blue */
+    background-color: #000022; 
     position: fixed;
     top: 0;
     width: 100%;
@@ -61,8 +61,8 @@ body {
     background-color: #000022;
     z-index: 100;
     align-items: center;
-    justify-content: flex-start; /* Align items to the start */
-    padding-top: 2%; /* Increase padding at the top */
+    justify-content: flex-start; 
+    padding-top: 2%; 
     transition: transform 0.3s ease-out;
     transform: translateX(100%);
 }
@@ -72,7 +72,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
-    display: block; /* Make links take up the full width of the menu */
+    display: block; 
 }
 
 
@@ -94,23 +94,23 @@ body {
 
 
 
-/* Adjust padding and border radius to make design simpler */
+
 .step1 a, .step2 a, .step3 a, .aarch64 a {
     display: inline-block;
     color: #fff;
-    background-color: #333; /* Dark grey background */
-    padding: 15px 30px; /* Increase padding */
+    background-color: #333; 
+    padding: 15px 30px; 
     text-decoration: none;
     font-size: 16px;
-    border-radius: 5px; /* Rounded corners */
-    margin-bottom: 10px; /* Space between buttons */
-    transition: background-color 0.3s ease; /* Smooth color transition */
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    transition: background-color 0.3s ease; 
 }
 
 .step1 a, .step2 a, .step3 a, .aarch64 a:hover {
-    background-color: #444; /* Slightly lighter grey when hovered */
+    background-color: #444; 
 }
-/* Add transitions to all elements to make everything smoother */
+
 * {
     transition: all 0.3s ease;
 }
