@@ -3,3 +3,4 @@
 .DS_Store    
 *.py
 crimes/server.js
+.htaccess
