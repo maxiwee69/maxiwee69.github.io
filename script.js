@@ -20,8 +20,6 @@ window.onload = function() {
     button.style.top = y+'px';
 }
 
-let counter = 0; // Initialize the counter
-
 document.getElementById('invisblebutton').addEventListener('click', function() {
     var secretImage = document.getElementById('secretImage');
     if (secretImage.style.display === 'block') {
@@ -35,8 +33,5 @@ document.getElementById('invisblebutton').addEventListener('click', function() {
         secretImage.style.position = "absolute";
         secretImage.style.left = x+'px';
         secretImage.style.top = y+'px';
-
-        counter++; // Increment the counter
-        document.getElementById('counter').textContent = counter + ' people have found the secret'; // Update the counter on the website
     }
 });
