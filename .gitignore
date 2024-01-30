@@ -1,7 +1,0 @@
-/push.sh
-.git/
-.DS_Store    
-*.py
-crimes/server.js
-.htaccess
-.gitignore
