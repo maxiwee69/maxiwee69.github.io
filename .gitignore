@@ -4,3 +4,4 @@
 *.py
 crimes/server.js
 .htaccess
+.gitignore
