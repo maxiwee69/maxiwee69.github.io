@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ answer: answer }), // Use the answer argument
+            body: JSON.stringify({ answer: answer }),
         })
         .then(response => {
             console.log(response);
@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Yes button clicked');
         sendAnswer('Yes');
         // Change the title
-        document.getElementById('message').textContent = 'Yippie!!';
         var image = document.getElementById('image');
         image.src = 'cat.gif'; 
         image.style.display = 'block';
