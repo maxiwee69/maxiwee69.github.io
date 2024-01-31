@@ -65,7 +65,7 @@ body {
     cursor: pointer;
 }
 
-#hiddenText1 {
+.hiddenText1 {
     display: none;
 
 }
