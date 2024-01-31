@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.message {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background: #ff7f50;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: #ff4500;
+}
+
+#yesButton, #noButton {
+    padding: 0px; 
+    min-width: 100px;
+    min-height: 50px; 
+}
+
+
+
+.title {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    margin-top: 600px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
