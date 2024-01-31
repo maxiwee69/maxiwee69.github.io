@@ -11,8 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ answer: answer }),
+            body: JSON.stringify({ answer: 'your answer here' }),
         })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch((error) => {
+            console.error('Error:', error);
+        });
         .then(response => {
             console.log(response);
             if (!response.ok) {
@@ -20,8 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             return response.json();
         })
-        .then(data => console.log('Success:', data))
-        .catch((error) => console.error('Error:', error));
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     }
 
     document.getElementById('yesButton').addEventListener('click', function() {
