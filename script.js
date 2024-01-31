@@ -34,4 +34,18 @@ document.getElementById('invisblebutton').addEventListener('click', function() {
         secretImage.style.left = x+'px';
         secretImage.style.top = y+'px';
     }
+
+    // Send a POST request to your backend
+    fetch('http://localhost:3001/counter', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ button: 'invisiblebutton' }),
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => {
+        console.error('Error:', error);
+    });
 });

@@ -7,7 +7,7 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 
-app.post('/save_answer', (req, res) => {
+app.post('/counter', (req, res) => {
     const answer = req.body.answer;
     console.log(`Received answer: ${answer}`); // Print the received answer
 
