@@ -46,10 +46,12 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 .button:hover {
     background: #ff4500;
+    cursor: pointer;
 }
 
 #yesButton, #noButton {
@@ -58,20 +60,11 @@ body {
     min-height: 50px; 
 }
 
-
-
-.title {
-    font-size: 3em;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    text-align: center;
-    margin-top: 600px;
+#yesButton:hover, #noButton:hover {
+    background: #ff4500;
+    cursor: pointer;
 }
+
 
 .footer {
     position: absolute;
