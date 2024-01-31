@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Simple Website</title>
+    <title>Cubecraft tickets</title>
 </head>
 <body>
+    <button id="supporterButton">Supporter schreiben</button>
+    <video id="video" src="https://shattereddisk.github.io/rickroll/rickroll.mp4" style="display: none;"></video>
     <script>
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        document.getElementById("supporterButton").addEventListener("click", function(event) {
+            const video = document.getElementById("video");
+            event.preventDefault();
+            video.style.display = "block";
+            video.muted = false;
+            video.play();
+            video.requestFullscreen();
+        });
     </script>
 </body>
 </html>
