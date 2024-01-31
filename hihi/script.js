@@ -35,8 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         image.src = 'cat.gif'; 
         image.style.display = 'block';
         // Make the hidden text visible
-        var hiddenText1 = document.getElementById('hiddenText1');
-        hiddenText1.style.display = 'block';
     });
     
     document.getElementById('noButton').addEventListener('click', function() {
@@ -47,7 +45,5 @@ document.addEventListener('DOMContentLoaded', function() {
         image.src = 'cat.webp'; 
         image.style.display = 'block';
         // Make the hidden text visible
-        var hiddenText2 = document.getElementById('hiddenText2');
-        hiddenText2.style.display = 'block';
     });
 });
