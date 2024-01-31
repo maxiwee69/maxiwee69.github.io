@@ -65,14 +65,6 @@ body {
     cursor: pointer;
 }
 
-.hiddenText1 {
-    display: none;
-
-}
-
-#hiddenText2 {
-    display: none;
-}
 
 .footer {
     position: absolute;
