@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var noButton = document.getElementById('noButton');
         noButton.parentNode.removeChild(noButton);
         var image = document.getElementById('image');
-        image.src = 'cat2.gif'; 
+        image.src = 'cat.png'; 
         image.style.display = 'block';
         // Make the hidden text visible
         var hiddenText2 = document.getElementById('hiddenText2');
