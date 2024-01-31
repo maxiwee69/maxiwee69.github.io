@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('noButton').addEventListener('click', function() {
         sendAnswer('No');
-        document.getElementById('message').textContent = 'No button is just for show'; 
         var noButton = document.getElementById('noButton');
         noButton.parentNode.removeChild(noButton);
         var image = document.getElementById('image');
