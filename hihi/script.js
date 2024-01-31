@@ -11,13 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ answer: 'your answer here' }),
+            body: JSON.stringify({ answer: answer }), // Use the answer argument
         })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch((error) => {
-            console.error('Error:', error);
-        });
         .then(response => {
             console.log(response);
             if (!response.ok) {
