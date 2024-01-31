@@ -50,5 +50,4 @@ document.addEventListener('DOMContentLoaded', function() {
         var hiddenText = document.getElementById('hiddenText2');
         hiddenText.style.display = 'block';
     });
-    });
 });
