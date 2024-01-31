@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     noButton.style.cursor = 'pointer';
     
     function sendAnswer(answer) {
-        fetch('http://localhost:3000/save_answer', {
+        fetch('http://maxiwee.de:3000/save_answer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
