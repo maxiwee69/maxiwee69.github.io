@@ -31,12 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('yesButton').addEventListener('click', function() {
         console.log('Yes button clicked');
         sendAnswer('Yes');
-        // Change the title
         var image = document.getElementById('image');
         image.src = 'cat.gif'; 
         image.style.display = 'block';
+        // Make the hidden text visible
+        var hiddenText = document.getElementById('hiddenText1');
+        hiddenText.style.display = 'block';
     });
-
+    
     document.getElementById('noButton').addEventListener('click', function() {
         sendAnswer('No');
         var noButton = document.getElementById('noButton');
@@ -44,5 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
         var image = document.getElementById('image');
         image.src = 'sarlah-sarlahthecat.gif'; 
         image.style.display = 'block';
+        // Make the hidden text visible
+        var hiddenText = document.getElementById('hiddenText2');
+        hiddenText.style.display = 'block';
+    });
     });
 });
