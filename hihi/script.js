@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     noButton.style.cursor = 'pointer';
     
     function sendAnswer(answer) {
-        fetch('http://maxiwee.de:3000/save_answer', {
+        fetch('http://localhost:3000/save_answer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var noButton = document.getElementById('noButton');
         noButton.parentNode.removeChild(noButton);
         var image = document.getElementById('image');
-        image.src = 'cat2.gif'; 
+        image.src = 'cat'; 
         image.style.display = 'block';
         // Make the hidden text visible
         var hiddenText2 = document.getElementById('hiddenText2');
