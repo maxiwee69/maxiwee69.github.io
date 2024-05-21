@@ -11,7 +11,6 @@ html {
   height: 100%;
 }
 
-
 .topnav {
   overflow: hidden;
   position: fixed;
@@ -89,6 +88,7 @@ html {
   padding-top: 2%;
   transition: transform 0.3s ease-out;
   transform: translateX(100%);
+  padding-left: 2%;
 }
 
 .menu a {
@@ -132,16 +132,4 @@ html {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
-}
-
-#invisblebutton {
-  opacity: 0;
-  width: 300px;
-  height: 300px;
-}
-
-#counter {
-  margin-top: 80px;
-  margin-left: 50px;
-  padding: 50px;
 }
