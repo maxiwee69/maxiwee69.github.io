@@ -1,4 +1,4 @@
 # Block access to .git directory
 RedirectMatch 404 /\.git
 Options -Indexes
-ErrorDocument 404 /404/index.html
+ErrorDocument 404 /404.html
