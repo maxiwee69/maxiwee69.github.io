@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch('https://maxiwee.de:5000/getData', {
+    fetch('https://127.0.0.1:5000/getData', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ window.onload = function() {
 };
 
 document.getElementById('clearDbButton').addEventListener('click', function() {
-    fetch('https://maxiwee.de:5000/clearDb', {
+    fetch('https://127.0.0.1:5000/clearDb', {
         method: 'POST',
     }).then(function(response) {
         if (response.ok) {
