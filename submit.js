@@ -4,7 +4,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     var text = document.querySelector('input[name="myInput"]').value;
     var contact = document.querySelector('input[name="contactInput"]').value;  // Get the contact info
 
-    fetch('http://127.0.0.1:5000/submit', {
+    fetch('https://127.0.0.1:5000/submit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
