@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Database Content</h1>
+    <button id="clearDbButton">Clear Database</button> <!-- New button -->
+    <table id="content">
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>Text</th>
+                <th>Contact Info</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added here by database.js -->
+        </tbody>
+    </table>
+    <script src="database.js"></script>
+</body>
+</html>
